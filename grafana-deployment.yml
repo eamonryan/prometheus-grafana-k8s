@@ -50,6 +50,7 @@ spec:
           # periodSeconds: 5
         securityContext:
           runAsUser: 472
+          runAsGroup: 472
         volumeMounts:
         - mountPath: /var/lib/grafana
           name: grafana-claim
