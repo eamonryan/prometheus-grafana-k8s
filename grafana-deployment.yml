@@ -49,7 +49,7 @@ spec:
           # initialDelaySeconds: 120
           # periodSeconds: 5
         securityContext:
-          fsGroup: 472
+          runAsUser: 472
         volumeMounts:
         - mountPath: /var/lib/grafana
           name: grafana-claim
