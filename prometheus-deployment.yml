@@ -9,7 +9,7 @@ spec:
     metadata:
       labels:
         app: prometheus-server
-      spec:
+    spec:
         containers:
           - name: prometheus
             image: prom/prometheus:latest
@@ -29,7 +29,7 @@ spec:
                 cpu: "500m"
               limits:
                 memory: "1Gi"
-                cpui: "1000m"
+                cpu: "1000m"
         volumes:
           - name: prometheus-config-volume
             configMap:
