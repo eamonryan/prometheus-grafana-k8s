@@ -8,7 +8,7 @@ metadata:
       prometheus.io/path:   /metrics
       prometheus.io/port:   '3000'
 spec:
-  type: ClusterIP 
+  type: NodePort 
   selector:
     component: grafana
   ports:
