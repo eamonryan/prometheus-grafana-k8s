@@ -9,13 +9,16 @@ metadata:
     prometheus.io/path:   /metrics
     prometheus.io/port:   '80'
 spec:
+  backend:
+    serviceName: grafana-ip-service
+    servicePort: 3000
   rules:
-    - host: grafana.local
-      http:
-        paths: 
-          - backend: 
-              serviceName: grafana-ip-service
-              servicePort: 3000
+  #  - host: grafana.local
+  #    http:
+  #      paths: 
+  #        - backend: 
+  #            serviceName: grafana-ip-service
+  #            servicePort: 3000
 
     - host: prometheus.local
       http:
