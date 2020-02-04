@@ -11,14 +11,14 @@ spec:
   #  serviceName: grafana-ip-service
   #  servicePort: 3000
   rules:
-    - host: grafana.gcp.cloudycelt.com
+    - host: grafana-old.gcp.cloudycelt.com
       http:
         paths: 
           - backend: 
               serviceName: grafana-ip-service
               servicePort: 3000
 
-    - host: prometheus.gcp.cloudycelt.com
+    - host: prometheus-old.gcp.cloudycelt.com
       http:
         paths: 
           - backend: 
